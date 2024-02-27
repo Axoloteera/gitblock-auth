@@ -1,22 +1,10 @@
 {
   "README": "`debug`若为ture则会读取dev-config.json作为配置文件",
   "debug": false,
-  "account": [
+  "account": 
     {
       "username": "AXOLOTL",
       "userid": "9999",
       "password": "99999999"
-    },
-    {
-      "username": "我是宇宙最强",
-      "userid": "857857",
-      "password": "2333333333"
     }
-  ],
-  "database": {
-    "address": "mongodb://127.0.0.1:27017",
-    "database": "gitblock-auth",
-    "username": "gitblock-auth",
-    "password": "TFGS99999"
-  }
 }
