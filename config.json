@@ -1,6 +1,6 @@
 {
   "README": "`debug`若为ture则会读取dev-config.json作为配置文件",
-  "debug": false,
+  "debug": true,
   "account": 
     {
       "username": "AXOLOTL",
