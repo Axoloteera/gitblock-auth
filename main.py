@@ -77,6 +77,7 @@ def verify(authkey: str) -> dict:
 
         for i in req['pagedThreads']['items']:
             if i['content'] == authkey:
+                del authkey_list[authkey]
                 return {"code": 200, 'userInfo': req['userMap'][str(i['creatorId'])]}
         return {"code": 404}  # code代表错误代码 201表示没有该authkey
 
