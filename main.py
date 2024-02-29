@@ -79,10 +79,10 @@ def verify(authkey: str) -> dict:
             if i['content'] == authkey:
                 del authkey_list[authkey]
                 return {"code": 200, 'userInfo': req['userMap'][str(i['creatorId'])]}
-        return {"code": 404}  # code代表错误代码 201表示没有该authkey
+        return {"code": 404}  # code代表错误代码 404表示没有该authkey
 
     else:
-        return {"code": 404}  # vaild代表该请求无效 code代表错误代码 403代表没有该authkey 例如为超时
+        return {"code": 404}  # vaild代表该请求无效 code代表错误代码 404代表没有该authkey 例如为超时
 
 
 if __name__ == '__main__':
